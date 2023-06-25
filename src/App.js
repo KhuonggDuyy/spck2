@@ -12,7 +12,6 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
-<<<<<<< HEAD
         <Router>
             <Routes>
                 <Route exact path='/' element={<DashboardPage/>} />
@@ -29,43 +28,3 @@ function App() {
 }
 
 export default App;
-=======
-    <div>
-      <AppProvider>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Game1" element={<MemoryGame />} />
-          <Route path="/Game2" element={<RockPaperScissors />} >
-            
-          </Route>
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Register" element={<Register />} />
-          <Route path="/About" element={<About />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
-        
-      </AppProvider>
-    </div>
-  );
-}
-
-export default App;
-
-const NotFound = () => {
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    console.log("Not Found");
-    setTimeout(() => {
-      navigate('/');
-    }, 3000);
-  }, []);
-  return (
-    <div>
-      Not Found
-    </div>
-  );
-};
->>>>>>> 52c21933e3a9d6a49fa940d09bdbcc74292346b3
