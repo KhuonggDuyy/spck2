@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import adminLayout from "../hoc/adminLayout";
-import ModalComponent from "../components/ModalComponent";
+import ModalForm from "../components/ModalForm";
 
 class TypographyPage extends React.Component {
   constructor(props) {
@@ -45,8 +45,8 @@ class TypographyPage extends React.Component {
     };
   }
 
-  openModal = () => {
-    this.setState({ isModalOpen: true, editUserId: null });
+  openModal = (editUserId) => {
+    this.setState({ isModalOpen: true, editUserId });
   }
 
   closeModal = () => {
@@ -123,7 +123,7 @@ class TypographyPage extends React.Component {
                         </button>
                         <ul className="dropdown-menu" aria-labelledby={`dropdownMenuButtonSM-${user.id}`}>
                           <li>
-                            <a className="dropdown-item" href="#" onClick={() => this.setState({ isModalOpen: true, editUserId: user.id })}>
+                            <a className="dropdown-item" href="#" onClick={() => this.openModal(user.id)}>
                               <i className="fa fa-pencil" aria-hidden="true"></i>&nbsp;Sửa
                             </a>
                           </li>
@@ -146,11 +146,10 @@ class TypographyPage extends React.Component {
         </div>
 
         {isModalOpen && (
-          <ModalComponent
+          <ModalForm
             onClose={this.closeModal}
             onSave={editUserId ? this.editUser : this.addUser}
-            editUserId={editUserId}
-            users={users}
+            user={editUserId ? users.find(user => user.id === editUserId) : null}
           />
         )}
       </>
