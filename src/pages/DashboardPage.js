@@ -17,7 +17,7 @@ class DashboardPage extends React.Component {
               <div className="card-body-icon">
               <i class="fas fa-globe-europe"></i>
               </div>
-              <div className="mr-5">15 người online!</div>
+              <div className="mr-5">Online!</div>
             </div>
             <a className="card-footer text-white clearfix small z-1" href="#">
               <span className="float-left">View Details</span>
@@ -33,7 +33,7 @@ class DashboardPage extends React.Component {
               <div className="card-body-icon">
                 <i className="fa fa-fw fa-list"></i>
               </div>
-              <div className="mr-5">Bảng xếp hạng</div>
+              <div className="mr-5">Rank!</div>
             </div>
             <a className="card-footer text-white clearfix small z-1" href="#">
               <span className="float-left">View Details</span>
@@ -49,7 +49,7 @@ class DashboardPage extends React.Component {
               <div className="card-body-icon">
                 <i className="fa fa-fw fa-shopping-cart"></i>
               </div>
-              <div className="mr-5">123 New Orders!</div>
+              <div className="mr-5">Store!</div>
             </div>
             <a className="card-footer text-white clearfix small z-1" href="#">
               <span className="float-left">View Details</span>
@@ -65,7 +65,7 @@ class DashboardPage extends React.Component {
               <div className="card-body-icon">
                 <i className="fa fa-fw fa-support"></i>
               </div>
-              <div className="mr-5">13 New Tickets!</div>
+              <div className="mr-5">Data!</div>
             </div>
             <a className="card-footer text-white clearfix small z-1" href="#">
               <span className="float-left">View Details</span>

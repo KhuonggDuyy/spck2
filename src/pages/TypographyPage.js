@@ -18,20 +18,11 @@ class TypographyPage extends React.Component {
 
     modalContent(){
         return <>
-            What is Lorem Ipsum?
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type 
-            specimen book. It has survived not only five centuries, but also the leap into 
-            electronic typesetting, remaining essentially unchanged. It was popularised in 
-            the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-            and more recently with desktop publishing software like Aldus PageMaker including 
-            versions of Lorem Ipsum.
+       
         </>;
     }
 
     render(){
-        // Add user ------------------------------------------------------------
         function addUser (){
 
         }
@@ -41,7 +32,7 @@ class TypographyPage extends React.Component {
             <div className="table-container">
                 <div className="row">
                     <div className="col">
-                        <h5 className="pb-2 mb-0">Table</h5>
+                        <h5 className="pb-2 mb-0">DATA USER MANAGEMENT</h5>
                     </div>
                     <div className="col text-right">
                         <button onClick={addUser} className="btn btn-default low-height-btn">
@@ -57,10 +48,9 @@ class TypographyPage extends React.Component {
                     <table className="table">
                         <thead>
                             <tr>
-                                <th><input type="checkbox"/></th>
                                 <th>Name</th>
                                 <th>Email</th>
-                                <th>Source</th>
+                                <th>Age</th>
                                 <th>Created On</th>
                                 <th>Status</th>
                                 <th></th>
@@ -68,11 +58,10 @@ class TypographyPage extends React.Component {
                         </thead>
                         <tbody>
                             <tr>
-                                <td><input type="checkbox"/></td>
                                 <td>Lynk Lee</td>
                                 <td>Lynklee@abc.com</td>
-                                <td>Website</td>
-                                <td>23-aug-2019</td>
+                                <td>18</td>
+                                <td>22-06-2023</td>
                                 <td>Online</td>
                                 <td>
                                     <div className="dropdown table-action-dropdown">
@@ -86,11 +75,10 @@ class TypographyPage extends React.Component {
                                 </td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox"/></td>
                                 <td>Nam Nung</td>
                                 <td>nam.nung@abc.com</td>
-                                <td>Mobile</td>
-                                <td>23-aug-2019</td>
+                                <td>22</td>
+                                <td>22-06-2023</td>
                                 <td>Online</td>
                                 <td>
                                     <div className="dropdown table-action-dropdown">
@@ -104,11 +92,10 @@ class TypographyPage extends React.Component {
                                 </td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox"/></td>
                                 <td>Hồ Quang Hiếu</td>
                                 <td>hquang.hieu@abc.com</td>
-                                <td>Mobile</td>
-                                <td>23-aug-2019</td>
+                                <td>26</td>
+                                <td>22-06-2023</td>
                                 <td>Offline</td>
                                 <td>
                                     <div className="dropdown table-action-dropdown">
@@ -122,11 +109,10 @@ class TypographyPage extends React.Component {
                                 </td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox"/></td>
                                 <td>Sơn Tùng MTP</td>
                                 <td>mtp@abc.com</td>
-                                <td>Mobile</td>
-                                <td>23-aug-2019</td>
+                                <td>30</td>
+                                <td>22-06-2023</td>
                                 <td>Offline</td>
                                 <td>
                                     <div className="dropdown table-action-dropdown">
@@ -143,23 +129,7 @@ class TypographyPage extends React.Component {
                     </table>
                 </div>
                 <nav className="table-bottom-center-pagination" aria-label="Page navigation example ">
-                    <ul className="pagination">
-                        <li className="page-item">
-                        <a className="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                            <span className="sr-only">Previous</span>
-                        </a>
-                        </li>
-                        <li className="page-item"><a className="page-link" href="#">1</a></li>
-                        <li className="page-item"><a className="page-link" href="#">2</a></li>
-                        <li className="page-item"><a className="page-link" href="#">3</a></li>
-                        <li className="page-item">
-                        <a className="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                            <span className="sr-only">Next</span>
-                        </a>
-                        </li>
-                    </ul>
+                 
                 </nav>
             </div>
            

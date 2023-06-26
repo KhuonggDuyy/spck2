@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-<<<<<<< HEAD
     "font-awesome": "^4.7.0",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
@@ -18,16 +17,6 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.3"
-=======
-    "antd": "^5.6.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.2",
-    "react-scripts": "5.0.1",
-    "sass": "^1.63.4",
-    "use-sound": "^4.0.1",
-    "web-vitals": "^2.1.4"
->>>>>>> 52c21933e3a9d6a49fa940d09bdbcc74292346b3
   },
   "scripts": {
     "start": "react-scripts start",
