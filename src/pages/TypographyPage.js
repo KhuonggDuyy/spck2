@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import adminLayout from "../hoc/adminLayout";
 import ModalComponent from "../components/ModalComponent";
 class TypographyPage extends React.Component {
@@ -8,27 +8,15 @@ class TypographyPage extends React.Component {
         this.state = {};
     }
 
-    modalFooterContent(){ 
-        return <>
-            <div style={{width:"100%"}}>
-                <button className="btn btn-default">Save</button> 
-            </div>
-        </>;
-    }
-
-    modalContent(){
-        return <>
-       
-        </>;
-    }
-
     render(){
         function addUser (){
 
         }
+    
 
         return (
             <>
+
             <div className="table-container">
                 <div className="row">
                     <div className="col">
@@ -40,10 +28,7 @@ class TypographyPage extends React.Component {
                         </button>
                     </div>
                 </div>
-                <div></div>
-                <p>
-              ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                </p>
+                
                 <div className="d-flex text-muted">
                     <table className="table">
                         <thead>
@@ -132,23 +117,7 @@ class TypographyPage extends React.Component {
                  
                 </nav>
             </div>
-           
-                
-                        
-                        
-                        
-        
-                       
-        
-                        
-        
-                       
-        
-                           
-        
-                            
-        
-                           
+          
             </>
           );
     }
