@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import adminLayout from "../hoc/adminLayout"
 import { Table } from 'reactstrap';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 
 function TypographyPage() {
